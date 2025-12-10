@@ -213,10 +213,13 @@ select:focus {
 
 .team img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  max-height: 260px;
+  object-fit: contain;
   border-radius: 12px;
+  background: #fff;
+  padding: 10px;     
 }
+
 
 .contact-grid {
   display: grid;
@@ -239,7 +242,6 @@ select:focus {
 
 @media (max-width: 900px) {
 
-  /* MOSTRAR BOTÓN */
   .nav-toggle {
     display: block !important;
   }
@@ -275,3 +277,4 @@ select:focus {
   .brand-img { width: 38px; height: 38px; }
   .promo-card, .treat-card { padding: 16px; }
 }
+
